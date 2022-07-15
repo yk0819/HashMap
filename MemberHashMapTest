@@ -1,0 +1,30 @@
+import java.util.HashMap;
+
+import org.xml.sax.HandlerBase;
+
+public class MemberHashMapTest {
+	
+	public static void main(String[] args) {
+		
+		MemberHashMap memberHashMap = new MemberHashMap();
+		
+		Member memberUnjo = new Member(809, "運上弘菜");
+		Member memberTanaka = new Member(912, "田中美久");
+		Member memberOda = new Member(004, "小田彩加");
+		Member memberSakai = new Member(005, "堺萌香");
+		
+		memberHashMap.addMember(memberUnjo);
+		memberHashMap.addMember(memberTanaka);
+		memberHashMap.addMember(memberOda);
+		memberHashMap.addMember(memberSakai);
+		
+		memberHashMap.showAllMember();
+		
+		HashMap<Integer, String> hashMap = new HashMap<Integer, String>();
+		hashMap.put(809, "hirona");
+		hashMap.put(912, "miku");
+		
+		System.out.println(hashMap);
+		
+	}
+}
